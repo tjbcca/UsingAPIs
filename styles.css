@@ -1,0 +1,70 @@
+.primary {
+  display: flex;
+  text-align: center;
+  padding: 50pt;
+  background-color: aqua;
+  overflow: hidden;
+}
+.advice {
+  color: black;
+  background-color: white;
+  font-size: 15pt;
+  position: absolute;
+  margin-top: 17%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  width: 77%;
+}
+@keyframes cookie1 {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-500px);
+  }
+}
+@keyframes cookie2 {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(500px);
+  }
+}
+.cookie1 {
+  position: absolute;
+  width: 50%;
+  z-index: 2;
+  animation-name: cookie1;
+  animation-duration: 4.5s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.6s;
+  right: 50%;
+}
+.cookie2 {
+  position: absolute;
+  width: 50%;
+  z-index: 2;
+  animation-name: cookie2;
+  animation-duration: 4.5s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.6s;
+  left: 50%;
+}
+.reBtn {
+  text-align: center;
+  width: 100pt;
+  height: 50pt;
+  z-index: 3;
+  margin: auto;
+  margin-top: 35%;
+  font-size: 20px;
+  background-color: beige;
+  border-radius: 12em;
+}
+.reBtn:hover {
+  background-color: bisque;
+  color: blue;
+  border-color: blue;
+}
